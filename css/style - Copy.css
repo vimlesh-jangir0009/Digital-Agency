@@ -1,0 +1,358 @@
+:root{
+    --text-white:#fff;
+}
+.ft-16{
+    font-size: 16px;
+}
+.padding{
+    padding: 70px 0px;
+}
+
+.text-green{
+    color: #98e209;
+}
+/*mnav css*/
+.mnav{
+    display: none;
+}
+button.toggle-i {
+    display: none;
+}
+.closeicon {
+    display: none;
+}
+
+/*  */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    background-color: #000;
+    border-bottom: 2px solid #292828;
+}
+.navbar {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand img {
+    width: 45px;
+    height: 38px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 32px 10px #403d3d;
+    margin: 0 5px 0 0px;
+}
+.nav-tag ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-tag ul li {
+    list-style: none;
+}
+
+.nav-tag ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 23px 15px;
+    transition: 0.5s;
+}
+.navbutton button {
+    color: #ffffff;
+    background-color: #98e209;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.navbutton button:hover{
+    color: #98e209;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.nav-tag ul li a:hover {
+    background-color: #98e209;
+    color: #000;
+    transition: 0.5s;
+}
+/* hero bennar css */
+header {
+    background-color: #000;
+    height: auto;
+    width: 100%;
+    padding: 70px 0;
+    background-image: url(../image/star_image-1.png),url(../image/star_image-2.png),url(../image/star_image-3.png);
+    background-size: 37px 37px, 97px 115px, 60px 68px;
+    background-position: 45px 484px, 35px 527px, 70px 391px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+z-index: -1,-1,-1 !important;
+    
+}
+.award-div {
+    position: relative;
+}
+.award-div h6 {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 0 20px 0;
+    padding: 0 0 0px 40px;
+    font-size: 16px;
+}
+.line-b-content {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 3px;
+    width: 32px;
+    background-color: #98e209;
+    z-index: 1;
+}
+
+.meet h2 {
+    font-size: 48px;
+    width: 53%;
+    color: #fff;
+    margin: 0;
+}
+.meet img {
+    width: 150px;
+    height: 100px;
+    margin: 0 20px 0 0;
+}
+.hero-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-tabs a h6 {
+    font-size: 16px;
+    margin: 0;
+}
+.hero-tabs a {
+    margin: 6px 3px 0 3px;
+    text-decoration: none;
+    color: #d8d3d3;
+    border-left: 1px solid #fffcfc;
+    border-right: 1px solid #fffdfd;
+    border-radius: 30px;
+    padding: 6px 22px;
+    background-color: #242222;
+    transition: 0.5s;
+}
+.hero-tabs a:hover{
+    background-color: #98e209;
+    color: #000;
+    transition: 0.5s;
+}
+.hero-tabs-right-cont {
+    padding: 0px 0 0 140px;
+    border-left:1px #98e209;
+}
+.herobanner-box-img-div {
+    position: relative;
+}
+.herobanner-box-img-div img {
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 35px;
+}
+/* hero img reviwe box css */
+.reviwe-img img {
+    width: 20%;
+    border-radius: 30px;
+    padding: 0px 0px 0px 0px;
+    height: 17%;
+    margin: -12px;
+}
+.reviwe-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #98e209;
+    padding: 15px 0px;
+    border: 8px solid #000;
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+}
+h6.reviwe-content {
+    padding: 0 20px;
+}
+h6.reviwe-content p {
+    font-size: 12px;
+}
+/* count box css */
+.count-box {
+    background-color: #98e209;
+    color: #000;
+    padding: 46px 46px;
+    border-radius: 35px;
+}
+.count-1 h6 {
+    font-size: 2rem;
+}
+.count-1 {
+    padding: 8px 0;
+}
+.count-1 p {
+    font-size: 16px;
+}
+
+/* marque css */
+.marquee {
+    background-color: #98e209;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+   
+}
+  p.marquep span {
+    padding: 0 100px;
+    font-size: 31px;
+}
+  .marquee p {
+    transform: translateX(0);
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    font-size: 50px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+/* discover section css */
+.Discover-cont {
+    background-color: #f2f1f194;
+    padding: 40px 50px;
+    border-radius: 33px;
+}   
+.discover-h h6 {
+    font-size: 42px;
+    width: 70%;
+}
+.discover-p p {
+    border-left: 3px solid #98e209;
+    padding: 0 0px 0 30px;
+}
+.Discover-img img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.green-arrow {
+    background-color: #000;
+    padding: 3px 2px;
+    border-radius: 50%;
+    
+}
+.green-arrow img {
+    width: 30px;
+    height: 29px;
+    border-radius: 50%;
+    transform: rotate(5deg);
+}
+.discover-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.Learn-btn a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+.Learn-btn {
+    background-color: chartreuse;
+    padding: 6px 12px;
+    border-radius: 30px;
+}
+.discover-btn {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: baseline;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px){
+/*mnav css*/
+.navbar-brand.block-mnav {
+    display: none;
+}
+.mnav-brand{
+    display: flex;
+    align-items: center;
+}
+.mnav{
+    background-color: #000;
+    display: block;
+}
+button.toggle-i {
+    display: block;
+}
+.closeicon {
+    display: block;
+    position: relative;
+    right: -166px;
+}
+#closeicon{
+    color: #1eff00; 
+    font-size: 16px;
+}
+i#toggleicon {
+    color: #1eff00;
+    background-color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar {
+    flex-direction: column !important;
+}
+.nav-tag ul {
+    flex-direction: column;
+}
+.nav-tag ul li a {
+    line-height: 3;
+    padding: 10px 40px;
+}
+nav.nav {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    z-index: 111111;
+    top: 50px;
+    transition: 0.8s; 
+}
+.transformnone{
+    transform: translateX(-100%);
+    transition: 0.8s;
+}
+/* colleps nav css end*/
+}
