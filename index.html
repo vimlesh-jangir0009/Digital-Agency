@@ -32,9 +32,9 @@
     <div class="mnav">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
-                <div class="navbar-brand col-10 m-0 mnav-brand">
-                    <img src="image/digital logo.jpg" alt="top-logo" />
-                    <h6 class="text-white m-0 ">Digital Agency</h6>
+                <div class="navbar-brand col-10 m-0 mnav-brand d-flex align-items-center">
+                    <img src="image/digital_logo.png" alt="top-logo" />
+                    <h6 class="text-white m-0 ">igital Agency</h6>
                 </div>
                 <div class="col-2">
                     <button class="toggle-i"><i class="bi bi-list " id="toggleicon"></i></button>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- navbar -->
-    <nav class="nav  transformnone" id="nav">
+    <nav class="nav" id="nav">
         <div class="container">
             <div class="navbar">
                 <div class="navbar-brand block-mnav m-0 flex">
@@ -128,7 +128,7 @@
                                         class="star-image-hero-bennar-c">
 
                                     <!-- <div class="hero-banner-reviwe "> -->
-                                    <div class=" reviwe-img col-md-4 ">
+                                    <div class=" reviwe-img col-md-4 col-6">
                                         <img src="image/reviweimg_1.png " alt="reviweimg_1" />
                                         <img src="image/reviweimg_2.png" alt="reviweimg_2" />
                                         <img src="image/reviweimg_3.png" alt="reviweimg_3" />
@@ -251,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-6">
+                    <div class="col-md-2 col-12">
                         <div class="learn-btn">
                             <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -708,11 +708,11 @@
                         <div class="line-b-content "></div>Contect Us
                     </h6>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-12 contect-h">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-6 col-7 contect-h">
                         <h3>Join Us in Creating <span class="text-green"> Something Great</span></h3>
                     </div>
-                    <div class="col-md-6 col-6">
+                    <div class="col-md-6 col-5">
                         <div class="contect-head-img">
                             <img src="./image/round img .png" alt="contect-us-section-image">
                         </div>
@@ -845,8 +845,8 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-slider">
-                            <div class="row align-items-center">
-                                <div class="col-md-3 testimonial-slider-img-box">
+                            <div class="row align-items-center ">
+                                <div class="col-md-3 col-12 testimonial-slider-img-box">
                                     <div class="testimonial-slider-img">
                                         <img src="./image/testimonial_slider_image.png" alt="Testimonial slider image">
                                     </div>
@@ -855,9 +855,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-12">
                                     <div class="testimonial-slider-content">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -1359,7 +1359,7 @@
             <div class="footer-content">
                 <div class="d-flex justify-content-between flex-wrap">
 
-                    <div class="col-md-4 footer-service">
+                    <div class="col-md-4 col-12 footer-service">
                         <h4><img src="./image/foter logo.jpg" alt="footer logo" id="footer-logo"/>igital Agency</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, earum facilis quo voluptas
                             beatae sit delectus. Soluta molestias reprehenderit?</p>
@@ -1382,7 +1382,7 @@
                         <a href="#"><i class="bi bi-youtube footer-icon"></i></a>
                     </div>
 
-                    <div class="col-md-2 footer-navigation">
+                    <div class="col-md-2 col-6 footer-navigation">
                         <h5>Navigation</h5>
                         <ul>
                             <li><a href="#">Hame</a></li>
@@ -1394,7 +1394,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-2 footer-navigation">
+                    <div class="col-md-2 col-6 footer-navigation">
                         <h5>Contect</h5>
                         <ul>
                             <li><a href="#">+0123-123-123</a></li>
@@ -1404,7 +1404,7 @@
                     <h6>4323Washington Ave. Manchester,Kentucy 56454</h6>
                     </div>
 
-                    <div class="col-md-3 footer-email">
+                    <div class="col-md-3 col-12 footer-email">
                     <h5>Get the latest information</h5>
                     <div id="footer-email">
                     <input type="email" placeholder="Email address" required="email" class="footer-email-input" ><i class="bi bi-send-fill footer-send-icon"></i></div>
@@ -1498,13 +1498,13 @@
     <!-- mnav function -->
     <script>
         $(document).ready(function () {
-            $("#closeicon").click(function () {
+            $("#toggleicon").click(function () {
                 $("#nav").addClass("transformnone");
             });
 
-            $("#toggleicon").click(function () {
-                $("#nav").removeClass("transformnone");
-            });
+            // $("#toggleicon").click(function () {
+            //     $("#nav").removeClass("transformnone");
+            // });
 
         });
     </script>

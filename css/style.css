@@ -175,7 +175,7 @@ nav .navbutton button:hover {
   /* count box css */
 }
 .hero-section .meet h2 {
-  font-size: 48px;
+  font-size: 3rem;
   width: 53%;
   color: #fff;
   margin: 0;
@@ -419,7 +419,7 @@ h1 {
   bottom: 0;
 }
 .award-wining-section .award-wining .award-wining-image .award-experience-h h5 {
-  font-size: 48px;
+  font-size: 3rem;
   margin: 0;
   padding: 1px 10px;
 }
@@ -795,7 +795,7 @@ h1 {
   padding: 0 90px 0 90px;
   position: relative;
   bottom: 200px;
-  font-size: 48px;
+  font-size: 3rem;
   z-index: 1;
 }
 .testimonial-section .swiper-click-arrow-container .bi-arrow-left-circle-fill {
@@ -1196,48 +1196,340 @@ section#about-award-wining-section #about-award-wining-content p {
   color: #000 !important;
 }
 
-@media screen and (max-width: 767px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Figtree", serif;
-    font-weight: 500;
+@media (max-width: 767px) {
+  /*mnav css*/
+  .hero-section .award-div h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
   }
-  body {
-    font-family: "Afacad", serif;
+  .hero-section .meet h2 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+  .hero-section .meet img {
+    width: 131px;
+    height: 91px;
+    margin: 0 0px 0 0;
+  }
+  .hero-section .hero-tabs {
+    justify-content: start;
+    margin: 6px 50px 8px 3px;
+  }
+  .hero-section .hero-tabs a h6 {
+    font-size: 14px;
     font-weight: 400;
   }
-  .mnav {
-    display: block;
-    background-color: #000;
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    left: 0;
-    z-index: 1;
+  .hero-section .hero-tabs-right-cont {
+    padding-left: 0;
   }
-  .mnav .mnav-brand {
+  .hero-section .hero-tabs-right-cont p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .hero-section .reviwe-img {
+    padding: 10px 0px;
+    border: 5px solid #000;
+    border-radius: 0px;
+    left: 8px;
+  }
+  .hero-section .reviwe-img h6.reviwe-content p {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .hero-section .count-box {
+    padding: 0px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hero-section .count-box .count-1 h6 {
+    font-size: 1.7rem;
+  }
+  .marquee_container {
+    padding: 0;
+  }
+  .marquee_container h1 {
+    font-size: 14px;
+    margin: 5px 30px 0px 30px;
+    font-weight: 400;
+  }
+  .discover-section .Discover-head {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
-  .mnav .mnav-brand img {
-    width: 76px;
-    height: 60px;
+  .discover-section .Discover-head .award-div h6 {
+    font-size: 14px;
+    font-weight: 400;
   }
-  .toggle-i {
+  .discover-section .Discover-head .discover-h h6 {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+  }
+  .discover-section .Discover-head .discover-p p {
+    text-align: center;
+    border-left: none;
+    padding-top: 15px;
+  }
+  .discover-section .Discover-cont {
+    padding: 30px 10px 30px 20px;
+    margin: 20px 0;
+  }
+  .discover-section .Discover-cont .Discover-main-cont p {
+    padding: 6px 0 0 0;
+  }
+  .discover-section .Discover-cont .Discover-main-cont .Discover-tabs {
+    padding: 5px 19px;
+    margin: 0 10px 9px 0;
+  }
+  .discover-section .Discover-cont .Discover-main-cont .Discover-tabs a {
+    font-weight: 400;
+  }
+  .discover-section .Discover-cont .Discover-img img {
+    border-radius: 30px 30px 30px 30px;
+    height: 230px;
+  }
+  .award-wining-section {
+    padding: 0px;
+  }
+  .award-wining-section .award-wining .award-wining-image .award-experience-h {
+    padding: 0px 5px;
+    border: 5px solid black;
+  }
+  .award-wining-section .award-wining .award-wining-image .award-experience-h h5 {
+    font-size: 2rem;
+  }
+  .award-wining-section .award-wining .award-wining-image .award-experience-h h5 .award-experience-p h2 {
+    font-size: 1.7rem;
+  }
+  .award-wining-section .award-wining .award-wining-content h5 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
     color: #fff;
-    background-color: #98e209;
+  }
+  .award-wining-section .award-wining .award-wining-content p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .award-wining-section .award-wining .award-wining-content .award-list h6 {
+    font-weight: 400;
+  }
+  .award-div h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .working-process .working-heading {
+    padding: 0px 0 0 0;
+  }
+  .working-process .working-heading h3 {
+    font-size: 1.7rem;
+  }
+  .working-process .working-content {
+    padding: 20px 0 0 0;
+  }
+  .working-process .working-content .working-c-box {
+    padding: 20px 25px;
+  }
+  .Our-Projects .work-portfolio-head {
+    padding: 0 0 30px 0;
+  }
+  .Our-Projects .work-portfolio-head .work-portfolio-h h4 {
+    font-size: 1.7rem;
+    max-width: 100%;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box {
+    margin: 2px 0 30px 0;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box img {
+    height: 250px;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box ul {
+    flex-wrap: wrap;
+    margin: 10px 0;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box ul li {
+    margin: 15px 8px;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box h2 {
+    font-size: 1.7rem;
+  }
+  .Our-Projects .work-portfolio-content .portfolio-img-box .portfolio-icon-arrow-a, .Our-Projects .work-portfolio-content .portfolio-img-box .portfolio-icon-arrow-b {
+    font-size: 36px;
+    margin-right: 0px;
+  }
+  .journey-section .testimonial-head {
+    width: 100%;
+  }
+  .journey-section .testimonial-head h3 {
+    font-size: 1.7rem;
+    margin-top: 10px;
+  }
+  .journey-section .journey-section-content {
+    padding: 50px 0 0 0;
+  }
+  .journey-section .journey-section-content .journey-container {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px 10px;
+  }
+  .journey-section .journey-section-content .journey-container .journey-content-box p {
+    max-width: 100%;
+  }
+  .contect-section .contect-heading {
+    padding: 0 0 30px 0;
+  }
+  .contect-section .contect-heading .contect-h h3 {
+    font-size: 1.4rem;
+  }
+  .contect-section .contect-content #contactForm {
+    padding: 0px 0 40px 0;
+  }
+  .contect-section .contect-content #contactForm .firstinputcss, .contect-section .contect-content #contactForm .secondinputcss {
+    width: 100%;
+    padding: 10px 8px;
     font-size: 16px;
+    border-radius: 0px;
+    margin: 10px 0px 5px 0px;
+  }
+  .contect-section .contect-content .contect-address h6 {
+    font-size: 18px;
+    margin: 0 0 5px 0px;
+    color: #202020;
+  }
+  .contect-section .contect-content .contect-address p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+  }
+  .contect-section .contect-content .contect-address .contect-icon-span .contect-icon {
+    font-size: 16px;
+    margin: 0px 10px 0px 10px;
+  }
+  .testimonial-section {
+    padding: 70px 0 0px 0;
+  }
+  .testimonial-section .testimonial-head {
+    width: 100%;
+  }
+  .testimonial-section .testimonial-head h6 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .testimonial-section .testimonial-head h3 {
+    font-size: 1.7rem;
+    margin-top: 10px;
+  }
+  .testimonial-section .testimonial-slider {
+    padding: 20px 20px;
+  }
+  .testimonial-section .testimonial-slider .testimonial-slider-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .testimonial-section .testimonial-slider .testimonial-slider-content .star-sm-class {
+    margin: 0 100px;
+  }
+  .testimonial-section .swiper-click-arrow-container {
+    padding: 0 20px 0 20px;
+    bottom: 300px;
+    font-size: 32px;
+  }
+  .newsblog-section .work-portfolio-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newsblog-section .work-portfolio-h h4 {
+    font-size: 1.7rem !important;
+    max-width: 100% !important;
+  }
+  .newsblog-section .newsblog-content {
+    margin: 0 0 30px 0;
+  }
+  .newsblog-section .newsblog-content p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .question-section .testimonial-head {
+    width: 100%;
+  }
+  .question-section .testimonial-head h6 {
+    font-weight: 400;
+  }
+  .question-section .testimonial-head h3 {
+    font-size: 1.7rem;
+    margin: 10px 0 25px 0;
+  }
+  footer .footer-head {
+    padding: 25px 0px 30px 0;
+  }
+  footer .footer-head h4 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  footer .footer-head .learn-btn a {
+    font-size: 14px;
+    padding: 8px 37px 8px 14px;
+  }
+  footer .footer-head .learn-btn i {
+    font-size: 30px;
+    top: -10px;
+  }
+  footer .footer-content .footer-service {
+    text-align: center;
+  }
+  footer .footer-content .footer-service img {
+    left: 89px;
+  }
+  footer .footer-content .footer-service p {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 7px 0px 10px 0;
+  }
+  footer .footer-content .footer-navigation {
+    margin-top: 25px;
+    text-align: center;
+  }
+  footer .footer-content .footer-navigation ul {
+    margin: 0;
+  }
+  footer .footer-content .footer-navigation ul li {
+    line-height: 1.9;
+  }
+  footer .footer-content .footer-email {
+    margin: 20px 0 0 0px;
+    text-align: center;
+  }
+  footer .footer-content .footer-email #footer-email {
+    position: relative;
+    margin: 10px 0 0 0;
+  }
+  footer .footer-content .footer-email #footer-email .footer-email-input {
+    padding: 8px 13px;
+    width: 68%;
+    border-radius: 15px;
+    font-size: 1rem;
+  }
+  footer .footer-content .footer-email #footer-email .footer-send-icon {
     cursor: pointer;
-    display: block !important;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
+    padding: 0px 9px;
+    right: 56px;
+    top: 1px;
+    font-size: 25px;
+  }
+  footer .copyright h5 {
+    font-size: 14px;
+    padding: 4px 0;
+    margin: 0 auto;
+  }
+  section.bradcome {
+    padding: 50px 0;
+  }
+  section.bradcome .bradcome-content h5 {
+    font-size: 1.7rem;
+    color: #fff;
   }
 }
 .hero-section {
