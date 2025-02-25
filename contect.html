@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- <link rel="stylesheet" href="scss/style.scss"/> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="nav  transformnone" id="nav">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-brand block-mnav m-0 flex">
+                    <img src="image/digital_logo.png" alt="top-logo" />
+                    <h6 class="text-white m-0">igital Agency</h6>
+                </div>
+                <div class="nav-tag">
+                    <ul>
+                        <div class="closeicon"><i class="bi bi-x-circle-fill close-i" id="closeicon"></i></div>
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="about us.html">About us</a></li>
+                        <li><a href="contect.html">Contect Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbutton">
+                    <button class="btn">Let's Talk</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- bradcome section -->
+
+    <section class="bradcome">
+        <div class="container">
+            <div class="bradcome-content">
+                <h5>Contect Us</h5>
+                <ul>
+                    <li><a href="index.html">Home </a></li><span class="text-white">/</span>
+                    <li><a href="contect.html"><span class="text-green">Contect Us</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="marque"> -->
+
+
+    <div class="marquee_container">
+        <div class="marquee">
+            <h1>Website Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>UX/UI Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Graphics Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Digital Marketing</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Mobile App Development</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Software Solution</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Web Development</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>UX/UI Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+        </div>
+        <!-- <div class="marquee">
+             
+                </div> -->
+    </div>
+
+    <!-- contect section -->
+    <section class="contect-section contectus-page-section">
+    <div class="container">
+        <div class="contect-heading">
+            <div class="award-div ">
+                <h6 class="text-dark">
+                    <div class="line-b-content "></div>Contect Us
+                </h6>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 contect-h contect-h-contect-section">
+                    <h3>Join Us in Creating <span class="text-green"> Something Great</span></h3>
+                </div>
+                <div class="col-md-6 col-6">
+                    <div class="contect-head-img">
+                        <img src="./image/contect page rounded image.png" alt="contect page rounded image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contect-content">
+            <div class="row align-items-center">
+                <div class="col-md-8 col-12">
+
+                    <form id="contactForm" class="contect-input-div">
+                        <input type="text" id="firstName" name="firstName" required pattern="^[A-Za-z]+$"
+                            minlength="2" maxlength="50" placeholder="First Name:" class="firstinputcss">
+
+                        <input type="text" id="lastName" name="lastName" required pattern="^[A-Za-z]+$"
+                            minlength="2" maxlength="50" placeholder="Last Name:" class="firstinputcss">
+
+                        <input type="email" id="email" name="email" required placeholder="Email:"
+                            class="firstinputcss">
+
+                        <input type="tel" id="phone" name="phone" required pattern="^\d{10}$"
+                            placeholder="Phone Number:" class="firstinputcss">
+
+                        <input type="text" id="subject" name="subject" required minlength="3" placeholder="Subject:"
+                            class="secondinputcss">
+
+                        <textarea id="message" name="message" required minlength="50" rows="5" placeholder="Message"
+                            class="secondinputcss"></textarea>
+                        <button type="submit" class="form-submit-btn">Submit<i class="bi bi-arrow-right-circle-fill"
+                                id="form-submit-icon"></i></button>
+                    </form>
+
+                </div>
+                <div class="col-md-4 col-12 contect-address">
+
+                    <!-- <div class="contect-address-div">  -->
+                    <h6>Address</h6>
+                    <p>4517 Washingtan Ave.Manchester,
+                        <br>Kentucky39495
+                    </p>
+                    <!-- </div> -->
+                    <!-- <div class="contect-address-div">  -->
+                    <h6>Contect</h6>
+                    <p>Phon:+0123-456-789<br>
+                        Email:example@gmail.com
+                    </p>
+                    <!-- </div> -->
+                    <!-- <div class="contect-address-div"> -->
+                    <h6>Open Time</h6>
+                    <p>Monday-Firday :10:00-20:00</p>
+                    <!-- </div> -->
+                    <!-- <div class="contect-address-div"> -->
+                    <h6>Stay Connected</h6>
+                    <span class="contect-icon-span">
+                        <a href="#"><i class="bi bi-facebook contect-icon">
+                            </i></span></a>
+
+                    <span class="contect-icon-span">
+                        <a href="#"><i class="bi bi-twitter-x contect-icon"></i></a>
+                    </span>
+
+                    <span class="contect-icon-span">
+                        <a href="#"><i class="bi bi-pinterest contect-icon">
+                            </i></a></span>
+
+                    <span class="contect-icon-span">
+                        <a href="#"><i class="bi bi-instagram contect-icon"></i></a>
+                    </span>
+
+                    <span class="contect-icon-span">
+                        <a href="#"><i class="bi bi-youtube contect-icon"></i></a>
+                    </span>
+                    <!-- </div> -->
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- map section in contect us page -->
+
+<section>
+    <div class="responsive-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3179.9590524728897!2d-83.76445732502877!3d37.15367314769614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s4517%20Washingtan%20Ave.Manchester%2C%20Kentucky39495!5e0!3m2!1sen!2sin!4v1740397142423!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+</section>
+
+<!-- <div class="marque"> -->
+
+    <div class="marquee_container">
+        <div class="marquee">
+            <h1>Website Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>UX/UI Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Graphics Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Digital Marketing</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Mobile App Development</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Software Solution</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>Web Development</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+            <h1>UX/UI Design</h1>
+            <h1 class="marque-star"><i class="bi bi-asterisk"></i></h1>
+        </div>
+        <!-- <div class="marquee">
+         
+            </div> -->
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+
+            <div class="footer-head">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+                    <div class="col-md-6 col-12">
+                        <h4 class="text-white">Let's <span class="text-green">Connect </span>there</h4>
+                    </div>
+                    <div class="col-md-6 col-12 Viwe-All-Projects-btn d-flex justify-content-end align-items-center">
+                        <div class="learn-btn ">
+                            <a href="#">Contect Us Now</a><i class="bi bi-arrow-right-circle-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="d-flex justify-content-between flex-wrap">
+
+                    <div class="col-md-4 footer-service">
+                        <h4><img src="./image/foter logo.jpg" alt="footer logo" id="footer-logo"/>igital Agency</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, earum facilis quo voluptas
+                            beatae sit delectus. Soluta molestias reprehenderit?</p>
+
+
+                        <a href="#"><i class="bi bi-facebook footer-icon">
+                            </i></a>
+
+
+                        <a href="#"><i class="bi bi-twitter-x footer-icon"></i></a>
+
+
+                        <a href="#"><i class="bi bi-pinterest footer-icon">
+                            </i></a>
+
+
+                        <a href="#"><i class="bi bi-instagram footer-icon"></i></a>
+
+
+                        <a href="#"><i class="bi bi-youtube footer-icon"></i></a>
+                    </div>
+
+                    <div class="col-md-2 footer-navigation">
+                        <h5>Navigation</h5>
+                        <ul>
+                            <li><a href="#">Hame</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 footer-navigation">
+                        <h5>Contect</h5>
+                        <ul>
+                            <li><a href="#">+0123-123-123</a></li>
+                            <li><a href="#">www.exampl.com</a></li>
+                            <li><a href="#">example@gmail.com</a></li>
+                        </ul>
+                    <h6>4323Washington Ave. Manchester,Kentucy 56454</h6>
+                    </div>
+
+                    <div class="col-md-3 footer-email">
+                    <h5>Get the latest information</h5>
+                    <div id="footer-email">
+                    <input type="email" placeholder="Email address" required="email" class="footer-email-input" ><i class="bi bi-send-fill footer-send-icon"></i></div>
+                    </div>
+
+                </div>
+            </div>
+
+   <div class="copyright d-flex justify-content-between ps-2 pe-2 flex-wrap">
+    <h5>Copyright &#169; 2024 Digital Agency. All Right Reserved.</h5>
+    <h5>User Terms & Condition | Privacy Policy</h5>
+   </div>
+ 
+
+        </div>
+    </footer>
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+     <!-- mnav function -->
+     <script>
+        $(document).ready(function () {
+            $("#closeicon").click(function () {
+                $("#nav").addClass("transformnone");
+            });
+
+            $("#toggleicon").click(function () {
+                $("#nav").removeClass("transformnone");
+            });
+
+        });
+    </script>
+    <!-- form validation script -->
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            let isValid = true;
+
+            function showError(id, condition) {
+                let errorElement = document.getElementById(id);
+                if (condition) {
+                    errorElement.style.display = "block";
+                    isValid = false;
+                } else {
+                    errorElement.style.display = "none";
+                }
+            }
+
+            let firstName = document.getElementById("firstName");
+            showError("firstNameError", !firstName.checkValidity());
+
+            let lastName = document.getElementById("lastName");
+            showError("lastNameError", !lastName.checkValidity());
+
+            let email = document.getElementById("email");
+            showError("emailError", !email.checkValidity());
+
+            let phone = document.getElementById("phone");
+            showError("phoneError", !phone.checkValidity());
+
+            let subject = document.getElementById("subject");
+            showError("subjectError", subject.value.trim().length < 3);
+
+            let message = document.getElementById("message");
+            showError("messageError", message.value.trim().length < 10);
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+
+<!-- sticy navbar -->
+
+<script>
+    $(window). scroll(function(){
+if ($(this). scrollTop() > 330) {
+$('.nav'). addClass('stickynav');
+}
+ else {
+$('.nav'). removeClass('stickynav');
+}
+});
+</script>
+
+
+</body>
+</html>

@@ -60,21 +60,74 @@ body {
   align-items: center;
 }
 
+.stickynav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1111;
+  transition: 0.5s;
+  background-color: #98e209;
+  width: 100%;
+}
+.stickynav .navbar .navbar-brand {
+  position: relative;
+}
+.stickynav .navbar .navbar-brand img {
+  box-shadow: none;
+  z-index: 1;
+}
+.stickynav .navbar .navbar-brand h6 {
+  position: absolute;
+  left: 36px;
+  top: 15px;
+  z-index: -1;
+  font-size: 22px;
+  color: #000 !important;
+}
+.stickynav .navbar .nav-tag ul li a {
+  color: #000 !important;
+}
+.stickynav .navbar .nav-tag ul li a:hover {
+  background-color: #000 !important;
+  color: #98e209 !important;
+  transition: 0.5s;
+}
+.stickynav .navbar .navbutton button {
+  color: #000 !important;
+}
+.stickynav .navbar .navbutton button:hover {
+  color: #98e209 !important;
+  background-color: #000 !important;
+  transition: 0.5s;
+}
+
 nav {
   background-color: #000;
   border-bottom: 2px solid #292828;
+  transition: 0.5s;
 }
 nav .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+nav .navbar .navbar-brand {
+  position: relative;
+}
 nav .navbar .navbar-brand img {
   width: 45px;
   height: 38px;
   border-radius: 100%;
-  box-shadow: 0px 0px 32px 10px #403d3d;
   margin: 0 5px 0 0px;
+  z-index: 11;
+}
+nav .navbar .navbar-brand h6 {
+  position: absolute;
+  left: 36px;
+  top: 16px;
+  z-index: 1;
+  font-size: 22px;
+  color: #fff;
 }
 nav .navbar .nav-tag ul {
   padding: 0;
@@ -407,7 +460,7 @@ h1 {
   font-size: 3rem;
 }
 .working-process .working-content {
-  padding: 70px 0 0px 0;
+  padding: 50px 0 0px 0;
 }
 .working-process .working-content .working-c-box {
   text-align: center;
@@ -552,6 +605,9 @@ h1 {
 .contect-section {
   background-color: #000;
   padding: 70px 0;
+}
+.contect-section .contect-heading {
+  padding: 0 0 70px 0;
 }
 .contect-section .contect-heading .contect-h h3 {
   font-size: 3rem;
@@ -972,6 +1028,172 @@ footer .copyright h5 {
   font-size: 14px;
   margin: 0;
   padding: 14px 0;
+}
+
+section.bradcome {
+  padding: 70px 0;
+  background: #000;
+  text-align: center;
+}
+section.bradcome .bradcome-content h5 {
+  font-size: 3rem;
+  color: #fff;
+}
+section.bradcome .bradcome-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+section.bradcome .bradcome-content ul li {
+  list-style: none;
+}
+section.bradcome .bradcome-content ul li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+section.bradcome .bradcome-content ul li a:hover {
+  color: #98e209;
+}
+
+section#about-award-wining-section {
+  background-color: #ffffff;
+}
+section#about-award-wining-section #about-award-wining-content h5 {
+  color: #000 !important;
+}
+section#about-award-wining-section #about-award-wining-content h6 {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(24, 22, 22, 0.58) !important;
+}
+section#about-award-wining-section #about-award-wining-content p {
+  color: rgba(24, 22, 22, 0.58) !important;
+}
+
+#aboutus-hero-section {
+  background-color: white;
+  padding: 70px 0;
+}
+#aboutus-hero-section div#about-reviwe-img {
+  left: 0 !important;
+  margin: 0 0 0 10px;
+}
+#aboutus-hero-section #about-count-box {
+  display: flex !important;
+  justify-content: space-around !important;
+  background-color: rgba(245, 240, 240, 0.6117647059) !important;
+  padding: 210px 4px 50px 130px !important;
+  margin: -180px 0 0 0 !important;
+}
+
+.about-working-process {
+  padding: 0 0 70px 0 !important;
+}
+
+.newsblog-section .about-section-work-portfolio-h h4 {
+  max-width: 80% !important;
+}
+.newsblog-section .about-team-member-content {
+  text-align: center;
+}
+.newsblog-section .about-team-member-content .about-team-member-icon {
+  margin: 0 7px;
+}
+.newsblog-section .about-team-member-content p {
+  font-size: 18px;
+  font-weight: 100;
+  color: #fff;
+  padding: 0;
+}
+
+.discover-section .service-section-discover-head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.discover-section .service-section-discover-head .service-section-discover-h h6 {
+  width: 100% !important;
+}
+.discover-section .service-section-discover-head .service-section-discover-h p {
+  padding: 0 !important;
+  border-left: none !important;
+  font-size: 20px;
+  width: 70%;
+  color: rgba(24, 22, 22, 0.58);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contectus-page-section {
+  background-color: white !important;
+}
+.contectus-page-section .contect-heading {
+  padding: 0 0 35px 0;
+}
+.contectus-page-section .contect-heading .contect-h-contect-section h3 {
+  color: black !important;
+}
+.contectus-page-section .contect-content input#firstName,
+.contectus-page-section .contect-content #lastName,
+.contectus-page-section .contect-content #email,
+.contectus-page-section .contect-content #phone,
+.contectus-page-section .contect-content #subject,
+.contectus-page-section .contect-content #message {
+  background-color: #dfdfdf !important;
+  color: #000 !important;
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative;
+  height: 400px;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.project-page {
+  background-color: #fff !important;
+}
+.project-page .project-page-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-page .project-page-head #project-page-work-portfolio-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.project-page .project-page-head #project-page-work-portfolio-h h4 {
+  width: 100% !important;
+  color: #000;
+}
+.project-page .project-page-portfolio-img-box {
+  background-color: #d9d9d9 !important;
+  margin-bottom: 30px !important;
+}
+.project-page .project-page-portfolio-img-box ul li a {
+  background-color: #98e209 !important;
+  color: #131313 !important;
+}
+.project-page .project-page-portfolio-img-box ul li a:hover {
+  background-color: rgba(24, 22, 22, 0.58) !important;
+  color: #fff !important;
+}
+.project-page .project-page-portfolio-img-box h2 {
+  color: #000 !important;
 }
 
 @media screen and (max-width: 767px) {

@@ -90,11 +90,83 @@ body {
     justify-content: center;
     align-items: center;
 }
+//
+//sticky navbar css
+.stickynav{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    transition: 0.5s;
+    background-color: $g-color;
+    width: 100%;
 
+    
+        .navbar {
+          
+    
+            .navbar-brand {
+            position: relative;
+                img {
+                    box-shadow:none;
+                    z-index: 1;
+                }
+                h6{
+                   position: absolute;
+                   left: 36px;
+                   top: 15px;
+                   z-index: -1;
+                   font-size: 22px;
+                   color: $b-color !important;
+                }
+            }
+    
+            .nav-tag {
+    
+                ul {
+                 
+    
+                    i#closeicon {
+                      
+                    }
+    
+                    li {
+                   
+    
+                        a {
+                         
+    color: $b-color !important;
+                            &:hover {
+                                background-color: $b-color !important;
+                                color: $g-color !important;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                }
+    
+            }
+      
+    
+        .navbutton {
+            button {
+           
+     color: $b-color !important;
+                &:hover {
+                    color: $g-color !important;
+                    background-color: $b-color !important;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+}
 //
 nav {
     background-color: $b-color;
     border-bottom: 2px solid #292828;
+    transition: 0.5s;
 
     .navbar {
         display: flex;
@@ -102,13 +174,22 @@ nav {
         align-items: center;
 
         .navbar-brand {
-
+            position: relative;
             img {
                 width: 45px;
                 height: 38px;
                 border-radius: 100%;
-                box-shadow: 0px 0px 32px 10px #403d3d;
+               
                 margin: 0 5px 0 0px;
+                z-index: 11;
+            }
+            h6{
+                position: absolute;
+                left: 36px;
+                top: 16px;
+                z-index: 1;
+                font-size: 22px;
+                color: #fff;
             }
         }
 
@@ -514,7 +595,7 @@ h1 {
 
                 i {
                     color: $g-color;
-                    font-size:$ft-16;
+                    font-size: $ft-16;
                     padding-right: 10px;
                 }
 
@@ -548,7 +629,7 @@ h1 {
 
     .working-content {
 
-        padding: 70px 0 0px 0;
+        padding: 50px 0 0px 0;
 
         .working-c-box {
             text-align: center;
@@ -745,6 +826,7 @@ h1 {
     padding: $section-padding;
 
     .contect-heading {
+        padding: 0 0 70px 0;
 
         .contect-h {
 
@@ -1308,17 +1390,246 @@ footer {
 
 }
 
+// about us landing page css start now
+
+section.bradcome {
+    padding: $section-padding;
+    background: $b-color;
+    text-align: center;
+
+    .bradcome-content {
+
+        h5 {
+            font-size: $ft-48;
+            color: $w-color;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    padding: 5px 10px;
+                    color: $w-color;
+                    font-size: $ft-16;
+
+                    &:hover {
+                        color: $g-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// about us award wining section css
+section#about-award-wining-section {
+    background-color: #ffffff;
+
+    #about-award-wining-content {
+        h5 {
+            color: $b-color !important;
+        }
+
+        h6 {
+            font-size: $ft-22;
+            font-weight: 400;
+            color: $gray-color !important;
+        }
+
+        p {
+            color: $gray-color !important;
+        }
+    }
 
 
+}
+
+// section#aboutus-hero-section 
+#aboutus-hero-section {
+    background-color: white;
+    padding: $section-padding;
+
+    div#about-reviwe-img {
+        left: 0 !important;
+        margin: 0 0 0 10px;
+    }
+
+    #about-count-box {
+        display: flex !important;
+        justify-content: space-around !important;
+        background-color: #f5f0f09c !important;
+        padding: 210px 4px 50px 130px !important;
+        margin: -180px 0 0 0 !important;
+    }
+}
+
+//.about-working-process css start now
+
+.about-working-process {
+    padding: 0 0 70px 0 !important;
+}
+
+// 
+
+// Team member section css 
+.newsblog-section {
+    .about-section-work-portfolio-h {
+        h4 {
+            max-width: 80% !important;
+        }
+    }
+
+    .about-team-member-content {
+
+        .about-team-member-icon {
+            margin: 0 7px;
+        }
+
+        text-align: center;
+
+        p {
+            font-size: 18px;
+            font-weight: 100;
+            color: $w-color;
+            padding: 0;
+        }
+    }
+}
+
+// 
+
+//service page css start now
+.discover-section {
+
+    .service-section-discover-head {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .service-section-discover-h {
+
+            h6 {
+                width: 100% !important;
+            }
+        }
+
+        .service-section-discover-h {
+
+            p {
+                padding: 0 !important;
+                border-left: none !important;
+                font-size: 20px;
+                width: 70%;
+                color: $gray-color;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+}
 
 
+//contect us section css start now
 
+.contectus-page-section {
+    background-color: white !important;
 
+    .contect-heading {
+        padding: 0 0 35px 0;
 
+        .contect-h-contect-section {
+            h3 {
+                color: black !important;
+            }
+        }
+    }
 
+    .contect-content {
 
+        input#firstName,
+        #lastName,
+        #email,
+        #phone,
+        #subject,
+        #message {
+            background-color: #dfdfdf !important;
+            color: $b-color !important;
+        }
 
+    }
+}
 
+//contect  map  css
+.responsive-map {
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+    height: 400px;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+// project section css start now
+.project-page {
+    background-color: #fff !important;
+
+    .project-page-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #project-page-work-portfolio-h {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            h4 {
+                width: 100% !important;
+                color: $b-color;
+            }
+        }
+    }
+
+    .project-page-portfolio-img-box {
+        background-color: #d9d9d9 !important;
+        margin-bottom: 30px !important;
+
+        ul {
+            li {
+                a {
+                    background-color: $g-color !important;
+                    color: $lb-color !important;
+
+                    &:hover {
+                        background-color: $gray-color !important;
+                        color: $w-color !important;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            color: $b-color !important;
+        }
+    }
+}
 
 
 

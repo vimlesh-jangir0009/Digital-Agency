@@ -48,18 +48,19 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar-brand block-mnav m-0 flex">
-                    <img src="image/digital logo.jpg" alt="top-logo" />
-                    <h6 class="text-white m-0">Digital Agency</h6>
+                    <img src="image/digital_logo.png" alt="top-logo" />
+                    <h6 class="text-white m-0">igital Agency</h6>
                 </div>
                 <div class="nav-tag">
                     <ul>
                         <div class="closeicon"><i class="bi bi-x-circle-fill close-i" id="closeicon"></i></div>
 
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="project.html">Projects</a></li>
                         <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contect Us</a></li>
+                        <li><a href="about us.html">About us</a></li>
+                        <li><a href="contect.html">Contect Us</a></li>
                     </ul>
                 </div>
                 <div class="navbutton">
@@ -1349,7 +1350,7 @@
                     </div>
                     <div class="col-md-6 col-12 Viwe-All-Projects-btn d-flex justify-content-end align-items-center">
                         <div class="learn-btn ">
-                            <a href="#">Viwe All Blogs</a><i class="bi bi-arrow-right-circle-fill"></i>
+                            <a href="#">Contect us Now</a><i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
                     </div>
                 </div>
@@ -1457,7 +1458,7 @@
         });
     </script>
 
-
+<!-- counter function script -->
     <script>
         $(document).ready(function () {
             function startCounters() {
@@ -1553,6 +1554,19 @@
             });
         });
     </script>
+
+<!-- sticy navbar -->
+
+<script>
+    $(window). scroll(function(){
+if ($(this). scrollTop() > 800) {
+$('.nav'). addClass('stickynav');
+}
+ else {
+$('.nav'). removeClass('stickynav');
+}
+});
+</script>
 </body>
 
 </html>
