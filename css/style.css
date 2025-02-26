@@ -1204,6 +1204,7 @@ section#about-award-wining-section #about-award-wining-content p {
     background-color: #000;
     position: relative;
     z-index: 1111111111;
+    padding: 10px 0 !important;
   }
   .mnav .mnav-brand img {
     width: 23%;
@@ -1211,8 +1212,8 @@ section#about-award-wining-section #about-award-wining-content p {
   }
   .mnav .mnav-brand h6 {
     position: absolute;
-    left: 64px;
-    top: 16px;
+    left: 61px;
+    top: 27px;
     font-size: 1rem;
   }
   .mnav .toggle-i {
@@ -1242,17 +1243,12 @@ section#about-award-wining-section #about-award-wining-content p {
     background-color: #98e209 !important;
     color: #fff !important;
   }
-  .stickynav .navbar .navbutton button:hover {
-    color: #000 !important;
-    background-color: #fff !important;
-    transition: 0.5s;
-  }
   nav {
     position: fixed !important;
     background-color: #000;
     width: 100%;
     z-index: 111111;
-    top: 40px !important;
+    top: 50px !important;
     transition: 0.8s;
     transform: translateX(-100%);
   }

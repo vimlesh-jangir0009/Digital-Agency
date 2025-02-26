@@ -1659,7 +1659,7 @@ section#about-award-wining-section {
         background-color: $b-color;
         position: relative;
         z-index: 1111111111;
-
+        padding: 10px 0 !important;
         .mnav-brand {
             img {
                 width: 23%;
@@ -1668,8 +1668,8 @@ section#about-award-wining-section {
 
             h6 {
                 position: absolute;
-                left: 64px;
-                top: 16px;
+                left: 61px;
+                top: 27px;
                 font-size: $ft-16;
             }
         }
@@ -1719,12 +1719,6 @@ section#about-award-wining-section {
             button {
                 background-color: $g-color !important;
                 color: $w-color !important;
-
-                &:hover {
-                    color: $b-color !important;
-                    background-color: $w-color !important;
-                    transition: 0.5s;
-                }
             }
         }
     }
@@ -1737,7 +1731,7 @@ section#about-award-wining-section {
         background-color: #000;
         width: 100% ;
         z-index: 111111;
-        top: 40px !important;
+        top: 50px !important;
         transition: 0.8s;
         transform: translateX(-100%);
 
