@@ -29,7 +29,7 @@
 
 <body>
 
-    <div class="mnav">
+    <div class="mnav" id="mnav">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
                 <div class="navbar-brand col-10 m-0 mnav-brand d-flex align-items-center">
@@ -286,7 +286,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-6">
+                    <div class="col-md-2 col-12">
 
                         <div class="learn-btn">
                             <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
@@ -325,7 +325,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-6">
+                    <div class="col-md-2 col-12">
                         <div class="learn-btn">
                             <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -365,7 +365,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-6">
+                    <div class="col-md-2 col-12">
                         <div class="learn-btn">
                             <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -405,7 +405,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2 col-6">
+                    <div class="col-md-2 col-12">
                         <div class="learn-btn">
                             <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                         </div>
@@ -893,7 +893,7 @@
 
                                 <div class="col-md-8">
                                     <div class="testimonial-slider-content">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -929,7 +929,7 @@
 
                                 <div class="col-md-8">
                                     <div class="testimonial-slider-content">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -965,7 +965,7 @@
 
                                 <div class="col-md-8">
                                     <div class="testimonial-slider-content">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -1001,7 +1001,7 @@
 
                                 <div class="col-md-8">
                                     <div class="testimonial-slider-content">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
@@ -1498,13 +1498,13 @@
     <!-- mnav function -->
     <script>
         $(document).ready(function () {
-            $("#toggleicon").click(function () {
-                $("#nav").addClass("transformnone");
+            $(".toggle-i").click(function () {
+                $("nav").addClass("transformnone");
             });
 
-            // $("#toggleicon").click(function () {
-            //     $("#nav").removeClass("transformnone");
-            // });
+            $("#closeicon").click(function () {
+                $("nav").removeClass("transformnone");
+            });
 
         });
     </script>
@@ -1564,6 +1564,17 @@ $('.nav'). addClass('stickynav');
 }
  else {
 $('.nav'). removeClass('stickynav');
+}
+});
+</script>
+
+<script>
+    $(window). scroll(function(){
+if ($(this). scrollTop() > 100) {
+$('#mnav'). addClass('stickynav');
+}
+ else {
+$('#mnav'). removeClass('stickynav');
 }
 });
 </script>

@@ -137,7 +137,7 @@ body {
 
                     a {
 
-                        color: $b-color !important;
+                        color: $b-color;
 
                         &:hover {
                             background-color: $b-color !important;
@@ -153,8 +153,8 @@ body {
 
         .navbutton {
             button {
-
-                color: $b-color !important;
+                background-color: $b-color !important;
+                color: $w-color !important;
 
                 &:hover {
                     color: $g-color !important;
@@ -1158,7 +1158,7 @@ h1 {
                 transition: 0.4s;
 
                 i {
-                    font-size: 50px;
+                    font-size: 30px;
                     color: $light-black-color;
                     cursor: pointer;
                     transition: 0.4s;
@@ -1654,97 +1654,131 @@ section#about-award-wining-section {
 @media (max-width: 767px) {
 
     /*mnav css*/
-    // .mnav {
-    //     display: block;
-    //     background-color: $b-color;
-    //     position: relative;
-    //     z-index: 1111111111;
+    .mnav {
+        display: block;
+        background-color: $b-color;
+        position: relative;
+        z-index: 1111111111;
 
-    //     .mnav-brand {
-    //         img {
-    //             width: 23%;
-    //             height: 33%;
-    //         }
+        .mnav-brand {
+            img {
+                width: 23%;
+                height: 33%;
+            }
 
-    //         h6 {
-    //             position: absolute;
-    //             left: 64px;
-    //             top: 16px;
-    //             font-size: $ft-16;
-    //         }
-    //     }
+            h6 {
+                position: absolute;
+                left: 64px;
+                top: 16px;
+                font-size: $ft-16;
+            }
+        }
 
-    //     .toggle-i {
-    //         display: block;
-    //         background: #2eff2e;
-    //         border: none;
-    //         border-radius: 5px;
+        .toggle-i {
+            display: block;
+            background: #2eff2e;
+            border: none;
+            border-radius: 5px;
 
-    //         #toggleicon {
-    //             color: #fff;
-    //         }
-    //     }
+            #toggleicon {
+                color: #fff;
+            }
+        }
 
-    //     .closeicon {
-    //         display: block;
-    //     }
-    // }
 
-    // .flex {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    }
 
-    // nav {
-    //     position: absolute;
-    //     background-color: #000;
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .stickynav {
+    //     position: sticky;
+    //     left: 0 !important;
+    //     top: 0 !important;
+    //     z-index: 1111;
+    //     transition: 0.5s;
+    //     background-color: $g-color;
     //     width: 100%;
-    //     z-index: 111111;
-    //     top: 50px;
-    //     transition: 0.8s;
-    //     transform: translateX(-100%);
+    // }   
+    
+   //sticky navbar css
+.stickynav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    transition: 0.5s;
+    background-color: $b-color;
+    width: 100%;
 
-    //     .navbar {
-    //         flex-direction: column;
+}
 
-    //         .navbar-brand {
-    //             display: none;
-    //         }
+    nav {
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        z-index: 111111;
+        top: 50px;
+        transition: 0.8s;
+        transform: translateX(-100%);
 
-    //         .nav-tag {
-    //             width: 100%;
+        .navbar {
+            flex-direction: column;
 
-    //             ul {
-    //                 flex-direction: column;
+            .navbar-brand {
+                display: none;
+            }
 
-    //                 li {
-    //                     width: 100%;
-    //                     text-align: center;
-    //                     line-height: 2;
+            .nav-tag {
+                width: 100%;
 
-    //                     a {
-    //                         color: #fff;
-    //                         text-decoration: none;
-    //                         padding: 12px 19px;
-    //                         transition: 0.5s;
-    //                         line-height: 3;
-    //                     }
-    //                 }
-    //             }
-    //         }
+                ul {
+                    flex-direction: column;
+                    position: relative;
 
-    //     }
-    // }
+                    .closeicon {
+                        position: absolute !important;
+                        right: 20px !important;
+                        top: 10px !important;
 
-    // .transformnone {
-    //     transform: translateX(0);
-    //     transition: 0.8s;
-    // }
+                        #closeicon {
+                            display: block !important;
+                            font-size: 20px !important;
+                            color: $g-color !important;
 
-    // .padding {
-    //     padding: 30px 0;
-    // }
+                        }
+                    }
+
+                    li {
+                        width: 100%;
+                        text-align: center;
+                        line-height: 2;
+
+                        a {
+                            color: #fff !important;
+                            text-decoration: none;
+                            padding: 12px 19px;
+                            transition: 0.5s;
+                            line-height: 3;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .transformnone {
+        transform: translateX(0);
+        transition: 0.8s;
+    }
+
+    .padding {
+        padding: 30px 0;
+    }
 
     .hero-section {
         .award-div {
@@ -1796,7 +1830,16 @@ section#about-award-wining-section {
             border-radius: 0px;
             left: 8px;
 
-            h6.reviwe-content {
+            img {
+                margin: -12px -20px -17px 0px !important;
+            }
+
+            .reviwe-content {
+                h6 {
+                    font-size: $ft-16 !important;
+                    font-weight: 400 !important;
+                }
+
                 p {
                     font-size: 14px;
                     font-weight: 200;
@@ -1809,17 +1852,38 @@ section#about-award-wining-section {
             text-align: center;
             margin-top: 20px;
 
+
             .count-1 {
                 h6 {
                     font-size: $ft-26;
                 }
             }
         }
+
+
+    }
+
+    #aboutus-hero-section {
+        #about-count-box {
+            display: flex !important;
+            justify-content: space-around !important;
+            background-color: rgba(245, 240, 240, 0.6117647059) !important;
+            padding: 100px 4px 5px 5px !important;
+            margin: -100px 0 0 0 !important;
+            flex-direction: column !important;
+
+            .count-box {
+                .count-1 h6 {
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+
     }
 
     //marquee
     .marquee_container {
-        padding: 0;
+        padding: 4px 0 0px 0;
 
         h1 {
             font-size: 14px;
@@ -1886,6 +1950,17 @@ section#about-award-wining-section {
                     height: 230px;
                 }
             }
+
+            .learn-btn {
+                a {
+                    font-size: $ft-16;
+                    padding: 10px 44px 11px 18px;
+                }
+
+                i {
+                    font-size: 36px;
+                }
+            }
         }
     }
 
@@ -1904,7 +1979,7 @@ section#about-award-wining-section {
                     h5 {
                         font-size: 2rem;
 
-                        .award-experience-p{
+                        .award-experience-p {
                             h2 {
                                 font-size: 1.7rem;
                             }
@@ -1914,6 +1989,11 @@ section#about-award-wining-section {
             }
 
             .award-wining-content {
+                h6 {
+                    font-size: $ft-14 !important;
+
+                }
+
                 h5 {
                     font-size: 1.7rem;
                     margin-bottom: 20px;
@@ -1929,6 +2009,7 @@ section#about-award-wining-section {
                 .award-list {
                     h6 {
                         font-weight: 400;
+                        font-size: $ft-14 !important;
                     }
                 }
             }
@@ -1968,10 +2049,22 @@ section#about-award-wining-section {
             padding: 0 0 30px 0;
 
             .work-portfolio-h {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
                 h4 {
                     font-size: 1.7rem;
                     max-width: 100%;
                 }
+            }
+
+            .Viwe-All-Projects-btn {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
             }
         }
 
@@ -1985,7 +2078,7 @@ section#about-award-wining-section {
 
                 ul {
                     flex-wrap: wrap;
-                    margin: 10px 0;
+                    margin: 5px 0;
 
                     li {
                         margin: 15px 8px;
@@ -1993,7 +2086,7 @@ section#about-award-wining-section {
                 }
 
                 h2 {
-                    font-size: $ft-26;
+                    font-size: $ft-16;
                 }
 
                 .portfolio-icon-arrow-a {
@@ -2040,11 +2133,17 @@ section#about-award-wining-section {
 
         .contect-heading {
             padding: 0 0 30px 0;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
 
             .contect-h {
 
                 h3 {
-                    font-size: 1.4rem;
+                    font-size: 1.7rem;
+                    text-align: center;
+                    padding-bottom: 11px;
                 }
             }
         }
@@ -2115,7 +2214,9 @@ section#about-award-wining-section {
                 text-align: center;
 
                 .star-sm-class {
-                    margin: 0 100px;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
                 }
             }
         }
@@ -2148,6 +2249,15 @@ section#about-award-wining-section {
             p {
                 font-size: $ft-14;
                 font-weight: 300;
+            }
+
+            .blog-image {
+                .blog-image-hover-arrow {
+
+                    i {
+                        font-size: 30px !important;
+                    }
+                }
             }
         }
     }
@@ -2201,7 +2311,7 @@ section#about-award-wining-section {
                 text-align: center;
 
                 img {
-                    left: 89px;
+                    left: 80px;
                 }
 
                 p {
@@ -2244,7 +2354,7 @@ section#about-award-wining-section {
                         padding: 0px 9px;
                         right: 56px;
                         top: 1px;
-                        font-size: 25px;
+                        font-size: 26px;
                     }
                 }
             }
@@ -2254,7 +2364,7 @@ section#about-award-wining-section {
             h5 {
                 font-size: $ft-14;
                 padding: 4px 0;
-                margin: 0 auto;
+                margin: 0 auto !important;
             }
         }
     }

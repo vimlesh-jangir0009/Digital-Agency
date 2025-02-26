@@ -26,6 +26,21 @@
 
 </head>
 <body>
+
+    <div class="mnav" id="mnav">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="navbar-brand col-10 m-0 mnav-brand d-flex align-items-center">
+                    <img src="image/digital_logo.png" alt="top-logo" />
+                    <h6 class="text-white m-0 ">igital Agency</h6>
+                </div>
+                <div class="col-2">
+                    <button class="toggle-i"><i class="bi bi-list " id="toggleicon"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
        <!-- navbar -->
        <nav class="nav  transformnone" id="nav">
         <div class="container">
@@ -150,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-12">
                     <div class="learn-btn">
                         <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                     </div>
@@ -185,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-12">
 
                     <div class="learn-btn">
                         <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
@@ -224,7 +239,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-12">
                     <div class="learn-btn">
                         <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                     </div>
@@ -264,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-12">
                     <div class="learn-btn">
                         <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                     </div>
@@ -304,7 +319,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-12">
                     <div class="learn-btn">
                         <a href="#">Learn More</a><i class="bi bi-arrow-right-circle-fill"></i>
                     </div>
@@ -330,7 +345,7 @@
                 <div class="col-md-6 col-12 contect-h">
                     <h3>Join Us in Creating <span class="text-green"> Something Great</span></h3>
                 </div>
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-12">
                     <div class="contect-head-img">
                         <img src="./image/round img .png" alt="contect-us-section-image">
                     </div>
@@ -442,7 +457,7 @@
 
                             <div class="col-md-8">
                                 <div class="testimonial-slider-content">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -478,7 +493,7 @@
 
                             <div class="col-md-8">
                                 <div class="testimonial-slider-content">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -514,7 +529,7 @@
 
                             <div class="col-md-8">
                                 <div class="testimonial-slider-content">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -550,7 +565,7 @@
 
                             <div class="col-md-8">
                                 <div class="testimonial-slider-content">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -586,7 +601,7 @@
 
                             <div class="col-md-8">
                                 <div class="testimonial-slider-content">
-                                    <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center  justify-content-sm-center star-sm-class">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
@@ -770,12 +785,12 @@
     <!-- mnav function -->
     <script>
         $(document).ready(function () {
-            $("#closeicon").click(function () {
-                $("#nav").addClass("transformnone");
+            $(".toggle-i").click(function () {
+                $("nav").addClass("transformnone");
             });
 
-            $("#toggleicon").click(function () {
-                $("#nav").removeClass("transformnone");
+            $("#closeicon").click(function () {
+                $("nav").removeClass("transformnone");
             });
 
         });
@@ -831,11 +846,23 @@
 
 <script>
     $(window). scroll(function(){
-if ($(this). scrollTop() > 330) {
+if ($(this). scrollTop() > 800) {
 $('.nav'). addClass('stickynav');
 }
  else {
 $('.nav'). removeClass('stickynav');
+}
+});
+</script>
+
+
+<script>
+    $(window). scroll(function(){
+if ($(this). scrollTop() > 100) {
+$('#mnav'). addClass('stickynav');
+}
+ else {
+$('#mnav'). removeClass('stickynav');
 }
 });
 </script>

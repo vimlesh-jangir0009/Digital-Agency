@@ -29,6 +29,21 @@
 
 <body>
 
+    <div class="mnav" id="mnav">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="navbar-brand col-10 m-0 mnav-brand d-flex align-items-center">
+                    <img src="image/digital_logo.png" alt="top-logo" />
+                    <h6 class="text-white m-0 ">igital Agency</h6>
+                </div>
+                <div class="col-2">
+                    <button class="toggle-i"><i class="bi bi-list " id="toggleicon"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- navbar -->
     <nav class="nav  transformnone" id="nav">
         <div class="container">
@@ -165,7 +180,7 @@
                                 <img src="image/hero bennar team image.png" alt="hero banner image"/>
 
                                 <!-- <div class="hero-banner-reviwe "> -->
-                                <div class=" reviwe-img  col-md-3" id="about-reviwe-img">
+                                <div class=" reviwe-img  col-md-3 col-6" id="about-reviwe-img">
                                     <img src="image/reviweimg_1.png " alt="reviweimg_1" />
                                     <img src="image/reviweimg_2.png" alt="reviweimg_2" />
                                     <img src="image/reviweimg_3.png" alt="reviweimg_3" />
@@ -187,19 +202,19 @@
                 <div class="count-box" id="about-count-box">
                     <div class="count-1">
                         <h6 class="counter" data-countto="850" data-duration="3500">0</h6>
-                        <p>Project Completed</p>
+                        <p class="m-0">Project Completed</p>
                     </div>
                     <div class="count-1">
                         <h6 class="counter" data-countto="18" data-duration="3500">0</h6>
-                        <p>Years of Experience</p>
+                        <p class="m-0">Years of Experience</p>
                     </div>
                     <div class="count-1">
                         <h6 class="counter" data-countto="500" data-duration="3500">0</h6>
-                        <p>Happy Customers</p>
+                        <p class="m-0">Happy Customers</p>
                     </div>
                     <div class="count-1">
                         <h6 class="counter" data-countto="150" data-duration="3500">0</h6>
-                        <p>Team Members</p>
+                        <p class="m-0">Team Members</p>
                     </div>
                 </div>
             </div>
@@ -553,7 +568,7 @@
     <script>
         $(document).ready(function () {
             function startCounters() {
-                if ($(window).scrollTop() > 1400) {
+                if ($(window).scrollTop() > 730) {
                     $(".counter").each(function () {
                         var $this = $(this);
                         if (!$this.hasClass("counted")) {
@@ -594,12 +609,12 @@
     <!-- mnav function -->
     <script>
         $(document).ready(function () {
-            $("#closeicon").click(function () {
-                $("#nav").addClass("transformnone");
+            $(".toggle-i").click(function () {
+                $("nav").addClass("transformnone");
             });
 
-            $("#toggleicon").click(function () {
-                $("#nav").removeClass("transformnone");
+            $("#closeicon").click(function () {
+                $("nav").removeClass("transformnone");
             });
 
         });
@@ -613,15 +628,28 @@
         });
     </script>
 
+
 <!-- sticy navbar -->
 
 <script>
     $(window). scroll(function(){
-if ($(this). scrollTop() > 330) {
+if ($(this). scrollTop() > 800) {
 $('.nav'). addClass('stickynav');
 }
  else {
 $('.nav'). removeClass('stickynav');
+}
+});
+</script>
+
+
+<script>
+    $(window). scroll(function(){
+if ($(this). scrollTop() > 100) {
+$('#mnav'). addClass('stickynav');
+}
+ else {
+$('#mnav'). removeClass('stickynav');
 }
 });
 </script>
